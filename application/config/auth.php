@@ -44,7 +44,7 @@ return array(
 
 	'attempt' => function($username, $password)
 	{
-		$user = DB::table('users')->where_username($username)->first();
+		$user = DB::table('users')->where_email($username)->first();
 
 		if ( ! is_null($user) and Hash::check($password, $user->password))
 		{
