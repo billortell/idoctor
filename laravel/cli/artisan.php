@@ -1,5 +1,7 @@
 <?php namespace Laravel\CLI; defined('DS') or die('No direct script access.');
 
+$_SERVER['LARAVEL_ENV'] = 'development';
+
 use Laravel\Bundle;
 use Laravel\Config;
 
