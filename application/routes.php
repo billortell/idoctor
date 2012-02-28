@@ -32,11 +32,10 @@
 |		});
 |
 */
-
-Route::get('/, home', function()
-{
-	return View::make('home.index');
-});
+// Route to our controllers
+Route::controller(
+	array( 'home', 'auth', 'idoctor' )
+);
 
 /*
 |--------------------------------------------------------------------------
@@ -93,7 +92,14 @@ Event::listen('500', function()
 
 Route::filter('before', function()
 {
-	// Do stuff before every request to your application...
+	// Global Assets for every view
+	Asset::add( 'css', 'css/bootstrap.css' );
+	Asset::add( 'jquery', 'js/jquery-1.7.1.min.js' );
+	Asset::add( 'collapse', 'js/bootstrap-collapse.js' );
+	Asset::add( 'dropdown', 'js/bootstrap-dropdown.js' );
+	Asset::add( 'modal', 'js/bootstrap-modal.js' );
+	Asset::add( 'transition', 'js/bootstrap-transition.js' );
+	Asset::add( 'alert', 'js/bootstrap-alert.js' );
 });
 
 Route::filter('after', function($response)
@@ -108,5 +114,5 @@ Route::filter('csrf', function()
 
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::to('login');
+	if (Auth::guest()) return Redirect::to('home');
 });
