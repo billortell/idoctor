@@ -1,4 +1,4 @@
-## iDoctoer - A simple database driven receipt tracker.
+## iDoctoer - A simple database driven receipt tracker, by Eric Percifield
 
 This is a small app powered by the [Laravel](http://laravel.com) framework for use as a receipt tracker.
 
