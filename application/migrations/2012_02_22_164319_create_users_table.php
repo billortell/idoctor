@@ -16,7 +16,7 @@ class Create_Users_Table {
 
 			// Data fields
 			$table->string( 'email', 120 )->unique();
-			$table->string( 'password', 40 );
+			$table->string( 'password', 80 );
 			$table->string( 'first_name', 80 );
 			$table->string( 'last_name', 120 );
 			$table->string( 'name', 201 )->index(); // Holds first + last name
