@@ -35,6 +35,7 @@
           </div>
           <div class="row-fluid">
             <div class="span10">
+              <?php echo $fbauth; ?>
               <?php echo $register; ?>
               <?php echo $login; ?>
             </div><!--/span-->
