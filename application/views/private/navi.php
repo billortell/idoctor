@@ -9,7 +9,8 @@
           <a class="brand" href="#">iDoctor</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><?php echo HTML::link( 'home', 'Home' ); ?></li>
+              <li class="active"><?php echo HTML::link( 'idoctor/create', 'Add Receipt' ); ?></li>
             </ul>
             <p class="navbar-text pull-right">Welcome back <?php echo Auth::user()->name; ?></p>
           </div><!--/.nav-collapse -->

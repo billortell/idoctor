@@ -21,9 +21,6 @@
             <ul class="nav nav-list">
               <li class="nav-header">Navigation</li>
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="<?php echo URL::to_action( 'idoctor@create' ); ?>">Create Receipt</a></li>
-              <li><a href="<?php echo URL::to_action( 'idoctor@list' ); ?>">List Receipts</a></li>
-              <li><a href="<?php echo URL::to_action( 'idoctor@search' ); ?>">Search Receipts</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

@@ -20,9 +20,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Navigation</li>
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="<?php echo URL::to_action( 'auth@login' ); ?>">Login</a></li>
-              <li><a href="<?php echo URL::to( 'home' ); ?>">Register</a></li>
+              <li>Please login to access the menu.</li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
